@@ -8,6 +8,10 @@ warnings.filterwarnings("ignore")
 from countryinfo import CountryInfo
 
 def main():
+    """
+    Program that downloads coronavirus statistics from a kaggle dataset and allows user
+    to plot graphs comparing countries across different covid statistics
+    """
     download_files()
     data, validCountries = clean_data()
     while True:
